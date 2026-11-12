@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manual oficial da Plataforma EaD para alunos, professores e responsáveis.">
+  <meta name="theme-color" content="#f5f8fc">
+  <title>Manual Oficial - Plataforma EaD</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-row">
+      <button class="icon-button mobile-menu-button" id="mobile-menu-button" type="button" aria-label="Abrir sumário" aria-controls="sidebar" aria-expanded="false">☰</button>
+      <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">▤</span><span>Manual Oficial <span class="brand-light">- Plataforma EaD</span></span></a>
+      <div class="header-actions">
+        <button class="button secondary theme-button" id="theme-button" type="button"><span id="theme-icon" aria-hidden="true">☾</span><span id="theme-label">Modo escuro</span></button>
+        <button class="button primary print-button" id="print-button" type="button">▣ <span>Imprimir / Salvar PDF</span></button>
+      </div>
+    </div>
+    <div class="search-wrap"><label class="sr-only" for="search-input">Pesquisar no manual</label><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Buscar aulas, tarefas, senha, suporte..."><button id="clear-search" type="button" hidden>Limpar</button></div>
+  </header>
+  <div class="layout">
+    <div class="backdrop" id="backdrop" hidden></div>
+    <aside class="sidebar" id="sidebar" aria-label="Sumário do manual">
+      <div class="sidebar-head"><span class="eyebrow">NESTE MANUAL</span><button class="icon-button close-menu-button" id="close-menu-button" type="button" aria-label="Fechar sumário">×</button></div>
+      <nav class="section-nav" aria-label="Navegação por seção">
+        <a href="#visao-geral" class="nav-link">Visão geral e pré-requisitos</a><a href="#guia-rapido" class="nav-link">Guia de início rápido</a><a href="#acesso" class="nav-link">Como acessar a plataforma</a><a href="#aulas" class="nav-link">Aulas e materiais</a><a href="#atividades" class="nav-link">Envio de atividades</a><a href="#faq" class="nav-link">Resolução de problemas</a><a href="#suporte" class="nav-link">Glossário e suporte</a>
+      </nav>
+      <p class="sidebar-note">Guia prático para alunos, professores e responsáveis.</p>
+    </aside>
+
+    <main id="conteudo" class="main-content">
+      <div class="empty-state" id="empty-state" role="status" hidden><span class="empty-symbol" aria-hidden="true">⌕</span><h2>Nenhum resultado encontrado</h2><p>Tente buscar “senha”, “PDF”, “tarefa”, “AVA” ou “suporte”.</p><button class="button primary" id="reset-search" type="button">Limpar pesquisa</button></div>
+      <section id="inicio" class="hero searchable-section">
+        <div><p class="eyebrow blue-text">GUIA PARA A COMUNIDADE ESCOLAR</p><h1>Aprender e ensinar, <span>mais simples.</span></h1><p class="hero-description">Orientações visuais para acessar a Plataforma EaD, acompanhar aulas, enviar atividades e resolver dúvidas do dia a dia.</p><div class="hero-actions"><a class="button primary" href="#visao-geral">Começar agora</a><a class="button secondary" href="#guia-rapido">Ver guia rápido</a></div><p class="version">Versão 1.0.0 · Novembro de 2026</p></div>
+        <div class="hero-art" aria-hidden="true"><div class="art-window"><span></span><span></span><span></span></div><div class="book-art"><b>EaD</b><div class="fake-lines"><i></i><i></i><i></i><i></i></div></div><p>Seu espaço de aprendizagem</p></div>
+      </section>
+      <section class="features searchable-section" aria-label="Recursos da plataforma">
+        <article class="feature filter-item"><b class="feature-icon blue-bg">▶</b><h2>Aulas</h2><p>Videoaulas e disciplinas.</p></article><article class="feature filter-item"><b class="feature-icon teal-bg">▤</b><h2>Materiais</h2><p>PDFs e conteúdos de apoio.</p></article><article class="feature filter-item"><b class="feature-icon green-bg">✓</b><h2>Tarefas</h2><p>Entregas e prazos.</p></article><article class="feature filter-item"><b class="feature-icon purple-bg">◎</b><h2>Notas e avisos</h2><p>Acompanhe sua turma.</p></article><article class="feature filter-item"><b class="feature-icon amber-bg">?</b><h2>Suporte</h2><p>Ajuda quando precisar.</p></article>
+      </section>
+
+      <section class="manual-section searchable-section" id="visao-geral">
+        <div class="section-heading"><span class="section-number">01</span><div><p class="eyebrow">ANTES DE COMEÇAR</p><h2>Visão geral e pré-requisitos</h2><p>A Plataforma EaD é um Ambiente Virtual de Aprendizagem (AVA) que reúne videoaulas, materiais didáticos, tarefas e acompanhamento de notas em um espaço digital.</p></div></div>
+        <div class="cards-grid four">
+          <article class="info-card filter-item"><span class="card-icon">▣</span><h3>Dispositivo conectado</h3><p>Computador, notebook, tablet ou smartphone.</p></article><article class="info-card filter-item"><span class="card-icon">◎</span><h3>Navegador ou aplicativo</h3><p>Navegador atualizado (Chrome, Edge, Firefox ou Safari) ou aplicativo oficial, se disponível.</p></article><article class="info-card filter-item"><span class="card-icon">⌑</span><h3>Conta institucional</h3><p>Usuário e senha provisória fornecidos pela secretaria escolar.</p></article><article class="info-card filter-item"><span class="card-icon">⌁</span><h3>Internet estável</h3><p>Conexão confiável para acessar aulas e enviar atividades.</p></article>
+        </div>
+      </section>
+
+      <section class="manual-section searchable-section" id="guia-rapido">
+        <div class="section-heading"><span class="section-number">02</span><div><p class="eyebrow">PRIMEIRO ACESSO</p><h2>Guia de início rápido</h2><p>Marque cada etapa concluída. O progresso fica salvo neste dispositivo.</p></div></div>
+        <div class="progress-card"><div class="progress-label"><span id="progress-text">0 de 4 etapas concluídas</span><strong id="progress-percent">0%</strong></div><progress id="quick-progress" max="4" value="0" aria-label="Progresso do guia de início rápido">0%</progress></div>
+        <div class="steps-grid">
+          <label class="step filter-item"><input class="quick-check" type="checkbox" data-key="portal"><span class="step-no">1</span><span><strong>Acesse o portal</strong><small>Use o endereço oficial fornecido pela instituição.</small></span></label>
+          <label class="step filter-item"><input class="quick-check" type="checkbox" data-key="credentials"><span class="step-no">2</span><span><strong>Informe suas credenciais</strong><small>Digite e-mail institucional e senha provisória.</small></span></label>
+          <label class="step filter-item"><input class="quick-check" type="checkbox" data-key="password"><span class="step-no">3</span><span><strong>Altere a senha</strong><small>Faça a troca no primeiro acesso, conforme instruções.</small></span></label>
+          <label class="step filter-item"><input class="quick-check" type="checkbox" data-key="courses"><span class="step-no">4</span><span><strong>Explore as disciplinas</strong><small>Confira suas matérias na página inicial.</small></span></label>
+        </div><p class="sr-only" id="progress-live" aria-live="polite"></p>
+      </section>
+
+      <section class="manual-section searchable-section" id="acesso">
+        <div class="section-heading"><span class="section-number">03</span><div><p class="eyebrow">ACESSO SEGURO</p><h2>Como acessar a plataforma</h2><p>Confirme o endereço antes de informar seus dados de acesso.</p></div></div>
+        <div class="visual-layout"><ol class="instruction-list">
+          <li class="filter-item"><b>1</b><div><strong>Solicite o endereço oficial</strong><p>Peça à escola ou secretaria o endereço da Plataforma EaD.</p></div></li><li class="filter-item"><b>2</b><div><strong>Digite o endereço no navegador</strong><p>Prefira acessar diretamente o endereço fornecido pela instituição.</p></div></li><li class="filter-item"><b>3</b><div><strong>Confira o domínio</strong><p>Se pesquisar, verifique cuidadosamente o endereço antes de abrir o resultado.</p></div></li><li class="filter-item"><b>4</b><div><strong>Evite anúncios e páginas não confirmadas</strong><p>Não use resultados patrocinados ou sites que a instituição não confirmou.</p></div></li><li class="filter-item"><b>5</b><div><strong>Proteja sua senha</strong><p>Nunca informe sua senha institucional em páginas desconhecidas.</p></div></li>
+        </ol><figure class="visual-card filter-item"><button class="image-button" type="button" data-image="assets/pesquisa-plataforma.svg" data-title="Exemplo ilustrativo de busca"><img src="assets/pesquisa-plataforma.svg" alt="Exemplo ilustrado de busca mostrando um anúncio marcado como patrocinado, sem endereço oficial." width="720" height="480"><span>Ampliar ilustração</span></button><figcaption>Exemplo ilustrativo de como localizar uma plataforma EaD em um mecanismo de busca. Utilize sempre o endereço oficial fornecido pela sua instituição.</figcaption></figure></div>
+        <aside class="notice warning"><b aria-hidden="true">!</b><p><strong>Confirme o endereço oficial com a escola antes de inserir seu usuário e sua senha.</strong></p></aside><p class="editable-url"><strong>Endereço oficial:</strong> <code>[ENDEREÇO OFICIAL DA PLATAFORMA]</code></p>
+      </section>
+
+      <section class="manual-section searchable-section" id="aulas">
+        <div class="section-heading"><span class="section-number">04</span><div><p class="eyebrow">ESTUDO E CONSULTA</p><h2>Como acessar aulas e materiais</h2><p>Use a navegação da disciplina para encontrar aulas e recursos.</p></div></div>
+        <div class="visual-layout"><ol class="instruction-list">
+          <li class="filter-item"><b>1</b><div><strong>Abra “Disciplinas”</strong><p>No menu principal, escolha a área de disciplinas.</p></div></li><li class="filter-item"><b>2</b><div><strong>Selecione a matéria</strong><p>Abra a disciplina desejada.</p></div></li><li class="filter-item"><b>3</b><div><strong>Navegue pelos tópicos ou semanas</strong><p>Os conteúdos podem estar organizados cronologicamente.</p></div></li><li class="filter-item"><b>4</b><div><strong>Abra PDFs, videoaulas e materiais</strong><p>Selecione o recurso para iniciar seus estudos.</p></div></li><li class="filter-item"><b>5</b><div><strong>Baixe conteúdos permitidos</strong><p>Quando disponível, baixe apostilas, slides ou exercícios para estudar offline.</p></div></li>
+        </ol><figure class="visual-card filter-item"><button class="image-button" type="button" data-image="assets/aulas-materiais.svg" data-title="Ilustração: aulas e materiais"><img src="assets/aulas-materiais.svg" alt="Ilustração didática de uma tela de disciplinas com tópicos, aula em vídeo e materiais PDF." width="720" height="480"><span>Ampliar ilustração</span></button><figcaption>Ilustração didática: selecione uma disciplina e abra os materiais disponíveis. A aparência real da plataforma pode ser diferente.</figcaption></figure></div>
+        <aside class="notice info"><b aria-hidden="true">i</b><p>Materiais complementares podem ser baixados para estudo offline quando a plataforma disponibilizar essa opção.</p></aside>
+      </section>
+
+      <section class="manual-section searchable-section" id="atividades">
+        <div class="section-heading"><span class="section-number">05</span><div><p class="eyebrow">ENTREGA DE TRABALHOS</p><h2>Como enviar atividades</h2><p>Confira o arquivo, o prazo e a confirmação de envio.</p></div></div>
+        <div class="visual-layout"><ol class="instruction-list">
+          <li class="filter-item"><b>1</b><div><strong>Abra a disciplina</strong><p>Acesse a matéria correspondente à atividade.</p></div></li><li class="filter-item"><b>2</b><div><strong>Localize a tarefa</strong><p>Leia as instruções e confira a data de entrega.</p></div></li><li class="filter-item"><b>3</b><div><strong>Selecione “Enviar Tarefa” ou “Adicionar Submissão”</strong><p>Use a opção indicada na página da tarefa.</p></div></li><li class="filter-item"><b>4</b><div><strong>Anexe o arquivo</strong><p>Selecione o documento no dispositivo ou arraste-o para a área de envio.</p></div></li><li class="filter-item"><b>5</b><div><strong>Salve as alterações</strong><p>Selecione “Salvar Alterações” depois de anexar o documento.</p></div></li><li class="filter-item"><b>6</b><div><strong>Confirme o envio final</strong><p>Clique em “Enviar Tarefa” quando solicitado e confira o status.</p></div></li>
+        </ol><figure class="visual-card filter-item"><button class="image-button" type="button" data-image="assets/enviar-atividade.svg" data-title="Ilustração: enviar uma atividade"><img src="assets/enviar-atividade.svg" alt="Ilustração didática mostrando seleção de arquivo, anexação e confirmação de envio de tarefa." width="720" height="480"><span>Ampliar ilustração</span></button><figcaption>Ilustração didática do fluxo de envio. Confira sempre as instruções específicas da atividade na plataforma.</figcaption></figure></div>
+        <div class="checklist-card"><div class="checklist-heading"><div><p class="eyebrow">CONFERÊNCIA FINAL</p><h3>Checklist antes do envio</h3></div><strong id="check-count">0 de 5 verificados</strong></div><div class="checklist-items"><label class="filter-item"><input class="submission-check" type="checkbox" data-key="format"><span>Arquivo em formato aceito, como PDF ou DOCX.</span></label><label class="filter-item"><input class="submission-check" type="checkbox" data-key="size"><span>Arquivo dentro do tamanho máximo permitido.</span></label><label class="filter-item"><input class="submission-check" type="checkbox" data-key="name"><span>Nome do arquivo conferido.</span></label><label class="filter-item"><input class="submission-check" type="checkbox" data-key="deadline"><span>Prazo de entrega verificado.</span></label><label class="filter-item"><input class="submission-check" type="checkbox" data-key="submit"><span>Botão final de envio acionado.</span></label></div><p class="sr-only" id="check-live" aria-live="polite"></p></div>
+      </section>
+
+      <section class="manual-section searchable-section" id="faq">
+        <div class="section-heading"><span class="section-number">06</span><div><p class="eyebrow">AJUDA RÁPIDA</p><h2>Resolução de problemas</h2><p>Selecione uma pergunta para consultar a resposta.</p></div></div>
+        <div class="accordion-list">
+          <article class="accordion-item filter-item"><h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-senha" type="button"><span>Esqueci minha senha. O que fazer?</span><b aria-hidden="true">+</b></button></h3><div class="accordion-panel" id="faq-senha" hidden><p>Na tela de login, selecione “Esqueci minha senha” e siga as instruções enviadas ao e-mail institucional cadastrado. Confira a pasta de spam se a mensagem não chegar.</p></div></article>
+          <article class="accordion-item filter-item"><h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-arquivo" type="button"><span>O arquivo não carrega ou não abre.</span><b aria-hidden="true">+</b></button></h3><div class="accordion-panel" id="faq-arquivo" hidden><p>Verifique o formato e o tamanho permitidos. Confira sua conexão, atualize o navegador e tente novamente.</p></div></article>
+          <article class="accordion-item filter-item"><h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-erro" type="button"><span>O envio da atividade apresenta erro.</span><b aria-hidden="true">+</b></button></h3><div class="accordion-panel" id="faq-erro" hidden><p>Confira formato, tamanho e conexão. Atualize a página e tente novamente. Se persistir, anote a mensagem de erro e contate o suporte antes do prazo.</p></div></article>
+          <article class="accordion-item filter-item"><h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-disciplina" type="button"><span>Uma disciplina não aparece no painel.</span><b aria-hidden="true">+</b></button></h3><div class="accordion-panel" id="faq-disciplina" hidden><p>Atualize a página e confira o filtro de semestre ou período letivo. Se continuar ausente, contate o suporte informando seu número de matrícula.</p></div></article>
+          <article class="accordion-item filter-item"><h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-video" type="button"><span>Não consigo abrir uma videoaula.</span><b aria-hidden="true">+</b></button></h3><div class="accordion-panel" id="faq-video" hidden><p>Verifique sua conexão, atualize o navegador e tente novamente. Se possível, teste outro navegador atualizado. Caso continue indisponível, fale com o professor ou suporte.</p></div></article>
+          <article class="accordion-item filter-item"><h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-confirmacao" type="button"><span>Não recebi a confirmação do envio.</span><b aria-hidden="true">+</b></button></h3><div class="accordion-panel" id="faq-confirmacao" hidden><p>Volte à tarefa e confira se o status indica que o arquivo foi enviado, e não apenas salvo como rascunho. Se houver dúvida, contate o professor ou o suporte.</p></div></article>
+          <article class="accordion-item filter-item"><h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-lento" type="button"><span>A página está lenta ou não carrega.</span><b aria-hidden="true">+</b></button></h3><div class="accordion-panel" id="faq-lento" hidden><p>Confira sua conexão, atualize a página e tente novamente após alguns instantes. Feche abas desnecessárias ou teste outro navegador. Persistindo, fale com o suporte.</p></div></article>
+        </div>
+      </section>
+
+      <section class="manual-section searchable-section" id="suporte">
+        <div class="section-heading"><span class="section-number">07</span><div><p class="eyebrow">TERMOS E ATENDIMENTO</p><h2>Glossário e canais de suporte</h2><p>Consulte termos comuns e encontre os dados de atendimento.</p></div></div>
+        <div class="support-layout"><div class="glossary-list"><article class="info-card filter-item"><span class="term-label">AVA</span><h3>Ambiente Virtual de Aprendizagem</h3><p>Plataforma digital que reúne conteúdos, atividades e interações educacionais.</p></article><article class="info-card filter-item"><span class="term-label">Dashboard</span><h3>Painel inicial</h3><p>Tela exibida após o login, com resumo das disciplinas, prazos e avisos.</p></article></div>
+          <aside class="support-card filter-item"><span class="support-icon" aria-hidden="true">✉</span><p class="eyebrow">PRECISA DE AJUDA?</p><h3>Fale com o suporte</h3><p>Para dificuldades não resolvidas neste manual, entre em contato com a equipe da instituição.</p><div class="support-detail"><span>E-mail de atendimento</span><div class="email-row"><a id="support-email" href="mailto:suporte.ead@escola.com">suporte.ead@escola.com</a><button class="button secondary" id="copy-email" type="button">Copiar</button></div></div><div class="support-detail"><span>Horário de atendimento</span><strong>Segunda a sexta-feira, das 8h às 17h</strong></div><p class="editable-note">E-mail e horário podem ser substituídos pelos dados oficiais da instituição.</p></aside>
+        </div>
+      </section>
+      <footer class="site-footer"><div><strong>Manual Oficial - Plataforma EaD</strong><p>Elaborado por Flávia, Bruno, Henrique, Sérgio, Eduarda, Levi e Renan.</p></div><span>Versão 1.0.0 · Novembro de 2026</span></footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Voltar ao topo" hidden>↑ <span>Topo</span></button>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog class="image-dialog" id="image-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><h2 id="dialog-title">Ilustração</h2><button class="icon-button" id="dialog-close" type="button" aria-label="Fechar">×</button></div><img id="dialog-image" src="" alt=""><p id="dialog-caption">Ilustração explicativa do manual.</p></dialog>
+</body>
+</html>
